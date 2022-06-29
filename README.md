@@ -3,7 +3,9 @@ Um desafio da forca.
 
 Feito no bootcamp Oracle Next Education.
 
-#### :sparkler: Links:
+#### :sparkler: Link:
+
+#### [Github Pages](https://marcelodopradoaugusto.github.io/Challenge_2/)
 
 
 #### :scroll: Descrição:
