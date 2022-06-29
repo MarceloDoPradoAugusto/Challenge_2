@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Shadows Into Light", cursive;
+    letter-spacing: 1.2px;
+}
+
+body {
+    padding: 1em 2em;
+    min-width: 350px;
+    padding-bottom: 0;
+}
+
+header div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    min-height: 76.5vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-index {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-index button {
+    width: 283px;
+    height: 75px;
+    border-radius: 18px;
+    border: none;
+    margin-bottom: 19px;
+    background-color: rgb(166, 173, 180);
+    color: lightblue;
+    border: 1px solid lightblue;
+    font-size: 1.1em;
+    transition: all 100ms;
+}
+
+.main-index :first-child {
+    background-color: darkorange;
+    color: aliceblue;
+}
+
+button:hover {
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.activeR:active {
+    background-color: yellow;
+    color: gainsboro;
+}
+
+.main-add {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nova-palavra {
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    min-width: 320px;
+    padding-left: 5px;
+    font-size: 1.5em;
+    height: 230px;
+    resize: none;
+    color: lightgreen;
+}
+
+.nova-palavra::placeholder {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.main-add textarea:focus {
+    outline: none;
+}
+
+.main-add div:first-child {
+    height: 250px;
+}
+
+.main-add div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.taDad {
+    max-width: 608px;
+    min-width: 325px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.taDad div {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.main-add button {
+    height: 48px;
+    max-width: 296px;
+    min-width: 155px;
+    width: 48%;
+    border-radius: 18px;
+    background-color: aliceblue;
+    color: orange;
+    border: 1px solid orange;
+    font-size: 1.1em;
+    transition: all 100ms;
+    margin-bottom: 1em;
+}
+
+#salvar {
+    background-color: orange;
+    color: white;
+}
+
+#jogar {
+    background-color: black;
+    color: white;
+}
+
+.main-game {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-game button {
+    height: 50px;
+    max-width: 296px;
+    min-width: 155px;
+    width: 30%;
+    border-radius: 29px;
+    background-color: aliceblue;
+    color: darkorange;
+    border: 1px solid darkorange;
+    font-size: 1.1em;
+    transition: all 100ms;
+    margin-bottom: 1em;
+}
+
+.main-game div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#novo-jogo {
+    background-color: darkorange;
+    color: aliceblue;
+    margin-right: 19px;
+}
+
+.letras {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.letras span {
+    display: inline-block;
+    border-bottom: 3px solid black;
+    width: 30px;
+    margin-right: 9px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.nulo {
+    height: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    margin-top: 1px;
+}
+
+.nulo span {
+    border-bottom: 2px solid white;
+    width: 20px;
+    padding: 0;
+    font-size: 1.2rem;
+    color: red;
+    border: none;
+    align-items: center;
+}
+
+.avisos {
+    background-color: rgba(255, 255, 255, 0, 0.9);
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    transition: all 2s;
+}
+
+.avisos div {
+    background-color: aliceblue;
+    width: 450px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vitoria {
+    display: none;
+    color: white;
+}
+
+.derrota {
+    display: none;
+    color: white;
+}
+
+.palavraAdd {
+    display: none;
+}
+
+footer {
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 30%;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer div {
+    height: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-github {
+    font-size: 2rem;
+    color: white;
+    transition: all 1s;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+}
+
+.mobile {
+    width: 100%;
+    height: 60%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.mobile textarea {
+    width: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        max-width: 100vw;
+        padding: 1em 0;
+    }
+
+    header,
+    main,
+    section,
+    .letras,
+    .valido,
+    .btDad {
+        width: 100%;
+        /*max-width: 350px;*/
+        min-width: 350px;
+    }
+
+    header {
+        padding: 0 1.5em;
+    }
+
+    main {
+        margin-bottom: 40px;
+    }
+
+    .main-index :last-child {
+        transform: scale(0.9);
+    }
+
+    .mobile {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .mobile textarea {
+        width: 0;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    body,
+    header,
+    main,
+    section,
+    .letras,
+    .valido {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    header {
+        padding: 0 1em;
+    }
+}
