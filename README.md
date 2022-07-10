@@ -1,5 +1,5 @@
 # Challenge_2
-Um desafio da forca. 
+Um desafio de forca.
 
 Feito no bootcamp Oracle Next Education.
 
